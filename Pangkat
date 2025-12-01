@@ -1,0 +1,21 @@
+class Pangkat {
+    int a, b;
+
+    Pangkat(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int hitungPangkat() {
+        int hasil = 1;
+        for (int i = 0; i < b; i++) {
+            hasil *= a;
+        }
+        return hasil;
+    }
+
+    public static void main(String[] args) {
+        Pangkat p = new Pangkat(2, 5);
+        System.out.println("Hasil = " + p.hitungPangkat());
+    }
+}
