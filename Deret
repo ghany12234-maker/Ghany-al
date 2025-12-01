@@ -1,0 +1,17 @@
+class Deret {
+    void generate(int[] a) {
+        for (int i = 1; i < a.length; i++) {
+            a[i] = a[i - 1] * 2;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] deret = new int[5];
+        deret[0] = 6;
+
+        Deret d = new Deret();
+        d.generate(deret);
+
+        for (int x : deret) System.out.print(x + " ");
+    }
+} 
